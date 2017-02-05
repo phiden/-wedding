@@ -1,4 +1,3 @@
-@import url(normalize.css);
 html {
   box-sizing: border-box; }
 
@@ -8,98 +7,52 @@ html {
 html,
 body {
   width: 100%;
+  margin: 0 auto;
   font-family: "mrs-eaves", Arial, sans-serif;
   font-size: 18px;
-  max-width: 68em;
+  color: #36354e;
+  font-weight: 400; }
+
+#container {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center; }
+
+section {
+  max-width: 100%;
   margin-left: auto;
-  margin-right: auto; }
-  html::after,
-  body::after {
+  margin-right: auto;
+  margin-bottom: 30px;
+  text-align: center; }
+  section::after {
     clear: both;
     content: "";
-    display: table; }
+    display: block; }
 
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: 2rem;
-  font-weight: 300; }
+.asterism {
+  height: 100px;
+  width: auto;
+  margin-top: 30px; }
+  @media screen and (max-width: 599px) {
+    .asterism {
+      width: 75%;
+      height: auto;
+      margin-top: 15px; } }
 
-h1 {
-  font-size: 4.0rem;
-  line-height: 1.2;
-  letter-spacing: -.1rem; }
-
-h2 {
-  font-size: 3.6rem;
-  line-height: 1.25;
-  letter-spacing: -.1rem; }
-
-h3 {
-  font-size: 3.0rem;
-  line-height: 1.3;
-  letter-spacing: -.1rem; }
-
-h4 {
-  font-size: 2.4rem;
-  line-height: 1.35;
-  letter-spacing: -.08rem; }
-
-h5 {
-  font-size: 1.8rem;
-  line-height: 1.5;
-  letter-spacing: -.05rem; }
-
-h6 {
-  font-size: 1.5rem;
-  line-height: 1.6;
-  letter-spacing: 0; }
-
-h1,
-h2,
-h3,
-h4 {
-  font-family: "mrs-eaves", sans-serif; }
+h1, h2, h3, h4 {
+  margin: 0; }
 
 h1 {
-  font-size: 4em; }
-  h1.asterism {
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 180px;
-    color: transparent;
-    padding-bottom: 0;
-    margin-bottom: 0; }
-  h1.gs-hero {
-    background-image: url("../img/gavin_sophia.svg");
-    position: relative;
-    margin-top: 300px; }
-  h1.ceremony-reception {
-    background-image: url("../img/ceremony.svg");
-    height: 100px; }
-  h1.hotels {
-    background-image: url("../img/hotels.svg");
-    height: 100px; }
-  h1.welcome {
-    background-image: url("../img/welcome.svg");
-    height: 100px; }
-  h1.about {
-    background-image: url("../img/about_us.svg");
-    height: 100px; }
-  h1.rsvp {
-    background-image: url("../img/rsvp.svg");
-    height: 100px; }
-
-h2 {
   font-size: 3em; }
-  h2.gs-sub {
-    margin-top: -40px; }
 
-h3 {
+h2 {
   font-size: 2em; }
 
+h3 {
+  font-size: 1.5em; }
+
 h4 {
-  font-size: 1.5em;
-  margin-top: -20px; }
+  font-size: 1.25em; }
 
 .bold {
   font-weight: 700; }
@@ -107,200 +60,127 @@ h4 {
 a {
   color: #36354e; }
   a:hover {
-    color: #b6b5cd; }
+    color: #7a78a4; }
 
-#container {
-  width: 100%;
-  height: auto;
-  overflow: auto;
-  margin: 0 auto;
-  text-align: center; }
-  #container section {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 100%;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    height: auto;
-    overflow: auto;
-    color: #36354e; }
-    #container section:last-child {
-      margin-right: 0; }
-    #container section .wrapper {
-      width: 80%;
-      margin: 0 auto; }
-    #container section.even {
-      background-color: white; }
-    #container section.odd {
-      background-color: #fcfcfc; }
-  #container .middle {
-    padding-left: 15px;
-    padding-right: 15px;
-    border-left: 1px solid #e0e0e0;
-    border-right: 1px solid #e0e0e0; }
-  #container #hero {
-    width: 100%;
-    background-image: url("../img/161014-sophiagavin-064.jpg");
-    /* positioning for image? */
-    background-size: 100%;
-    background-position-y: -70px;
-    background-repeat: no-repeat;
-    padding-bottom: 0px;
-    color: white; }
-    #container #hero .wrapper {
-      padding-top: 50px;
-      height: 90%;
-      vertical-align: middle; }
-      #container #hero .wrapper h3 {
-        padding-bottom: 0;
-        margin-bottom: 10px;
-        margin-top: -30px;
-        text-shadow: 4px 4px 7px rgba(150, 150, 150, 0.5); }
-      #container #hero .wrapper h4 {
-        padding-top: 0;
-        margin-top: -20px;
-        text-shadow: 4px 4px 7px rgba(150, 150, 150, 0.5); }
-    #container #hero nav {
-      width: 100%;
-      height: 10%;
-      background-color: #F7DED9;
-      height: 40px; }
-      #container #hero nav li {
-        height: 100%;
-        display: inline-block;
-        vertical-align: middle;
-        padding-bottom: 0;
-        margin-bottom: 0;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 5px; }
-        #container #hero nav li a {
-          text-decoration: none;
-          vertical-align: middle;
-          color: #36354e; }
-        #container #hero nav li:hover {
-          border-bottom: 5px solid #36354e; }
-  #container #the_wedding {
-    height: auto;
-    overflow: auto; }
-    #container #the_wedding h4 {
-      margin-bottom: 10px; }
-    #container #the_wedding .left {
-      padding-left: 20%;
-      padding-right: 2%; }
-    #container #the_wedding .right {
-      padding-left: 2%;
-      padding-right: 20%; }
-  #container #about .slides {
-    margin: 0 auto;
-    text-align: center;
-    width: 800px;
-    height: auto; }
-    #container #about .slides img {
-      width: 100%;
-      height: auto; }
-    #container #about .slides .credit {
-      font-size: 0.75em;
-      color: grey; }
-  #container #about .slick-prev:before,
-  #container #about .slick-next:before {
-    color: #36354e; }
-  #container #about .slick-dots {
-    bottom: 15px; }
-  #container #about .name {
-    width: 100px;
-    height: auto; }
-  #container #about #know-us {
-    padding-top: 60px; }
-    #container #about #know-us li {
-      margin-bottom: 5px; }
-  #container #about .no-left-margin {
-    width: 50%; }
-    #container #about .no-left-margin p {
-      margin-top: 30px;
-      margin-left: 60px;
-      margin-right: 60px;
-      margin-bottom: 10px; }
+.even {
+  background-color: #fcfcfc; }
 
-.row {
+.six {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 100%; }
-  .row:last-child {
+  width: 48.82117%;
+  margin-top: 30px; }
+  .six:last-child {
     margin-right: 0; }
 
 .four {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 31.76157%; }
+  width: 31.76157%;
+  padding-left: 15px;
+  padding-right: 15px; }
   .four:last-child {
     margin-right: 0; }
 
-.six {
+@media screen and (max-width: 599px) {
+  .six,
+  .four {
+    width: 100%; } }
+
+.twelve {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%; }
-  .six:last-child {
+  width: 100%; }
+  .twelve:last-child {
     margin-right: 0; }
 
-.no-left-margin {
-  margin-left: 0; }
+.left {
+  padding-left: 30px; }
+
+.right {
+  padding-right: 30px; }
+
+@media screen and (max-width: 599px) {
+  .left,
+  .right {
+    padding: 0; } }
+
+.name {
+  height: 75px;
+  width: auto; }
+
+nav {
+  width: 100%;
+  height: 50px;
+  background-color: #F7DED9;
+  margin-top: -5px; }
+  nav li {
+    height: 100%;
+    display: inline-block;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px; }
+    nav li a {
+      text-decoration: none;
+      vertical-align: middle;
+      color: #36354e; }
+    nav li:hover {
+      border-bottom: 5px solid #36354e; }
+  @media screen and (max-width: 599px) {
+    nav {
+      height: auto;
+      text-align: center;
+      padding-bottom: 15px; } }
+
+img.hero {
+  width: 100%;
+  height: auto; }
+
+.slides {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center; }
+  .slides img {
+    margin-bottom: 15px; }
+  .slides .credit {
+    font-size: 0.75em;
+    color: #c7c7c7;
+    margin-top: 5px; }
+  @media screen and (max-width: 599px) {
+    .slides {
+      width: 100%;
+      height: auto; }
+      .slides img {
+        width: 100%;
+        height: auto; } }
+
+#baltimore {
+  padding-bottom: 30px; }
+  @media screen and (max-width: 599px) {
+    #baltimore .four {
+      padding-bottom: 30px; } }
+  @media screen and (max-width: 599px) {
+    #baltimore h4 {
+      padding-bottom: 30px; } }
 
 footer {
-  width: 100%;
-  font-size: .75em;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  padding: 20px; }
+  font-size: 0.75em;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  footer::after {
+    clear: both;
+    content: "";
+    display: block; }
   footer p {
-    margin-bottom: 0; }
-
-/* iphone */
-@media only screen and (min-device-width: 375px) and (max-device-width: 1334px) {
-  #container section {
-    padding-left: 0;
-    padding-right: 0; }
-  #container #hero {
-    background-repeat: no-repeat;
-    background-position: 0px;
-    background-image: url(../img/hero-mobile.jpg);
-    background-size: 100%;
-    padding-bottom: 0px;
-    color: #36354e;
-    height: auto;
-    overflow: auto; }
-    #container #hero nav {
-      height: auto;
-      overflow: auto; }
-      #container #hero nav li {
-        margin-bottom: 10px; }
-    #container #hero .wrapper h1.gs-hero {
-      margin-top: 65px; }
-  #container #about .slick-dots {
-    width: 90%;
-    margin: 0 auto;
-    position: relative; }
-  #container #about .slides {
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 100%; }
-    #container #about .slides img {
-      margin-bottom: 10px; }
-  #container .four,
-  #container .six {
-    width: 100%; }
-  #container #baltimore,
-  #container #stay,
-  #container #the_wedding {
-    padding-left: 15px;
-    padding-right: 15px; } }
-/*@include media($mobile) {
-  
-    }*/
+    margin: 3px; }
 
 /*# sourceMappingURL=screen.css.map */
