@@ -291,3 +291,20 @@ footer {
     margin:3px;
   }
 }
+
+.button {
+  
+  display:block;
+  padding:10px 20px;
+  border:1px solid $blue;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  width:50%;
+  margin:0 auto;
+  background-color:$blue;
+  color:white;
+  text-decoration: none;
+  margin-top:20px;
+  font-size:.85em;
+}
